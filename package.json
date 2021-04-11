@@ -4,7 +4,8 @@
   "description": "catz",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"css/*.css\""
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,12 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "esm": "^3.2.25",
+    "jquery": "^3.5.1",
+    "keypress": "^0.2.1"
+  },
   "bugs": {
     "url": "https://github.com/Fayyaz00/catz/issues"
   },
