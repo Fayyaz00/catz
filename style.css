@@ -1,0 +1,19 @@
+
+.meow-button {
+margin-left: 50%;
+margin-right: auto;
+padding: 1%;
+margin-bottom: 1%;
+margin-top: 1%;
+}
+
+#frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#test {
+  background-color: aliceblue;
+}
