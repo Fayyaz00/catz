@@ -1,1 +1,1 @@
-web: browser-sync start --server --files "css/*.css"
+web: node server.js
