@@ -12,7 +12,3 @@ document.getElementById('meow1').addEventListener('click', async () => {
   let cat = await fetch_result.json();
   document.getElementById('frame').src = cat.file;
 })
-
-
-
-
