@@ -1,14 +1,25 @@
+const http = require('http')
+const fs = require('fs')
+const port = 3000
 
-document.getElementById('meow').addEventListener('click', async () => {
+const server = http.createServer(function (req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/html' })
+  fs.readFile('index.html', function (error, data) {
+    if (error) {
+      res.writeHead(404)
+      res.write('Error: File Not Found')
+    } else {
+      res.write(data)
+    }
+    res.end()
+  })
 
-  let fetch_result = await fetch("https://aws.random.cat/meow");
-  let cat = await fetch_result.json();
-  document.getElementById('frame').src = cat.file;
 })
 
-document.getElementById('meow1').addEventListener('click', async () => {
-
-  let fetch_result = await fetch("https://aws.random.cat/meow");
-  let cat = await fetch_result.json();
-  document.getElementById('frame').src = cat.file;
+server.listen(port, function (error) {
+  if (error) {
+    console.log('Something went wrong', error)
+  } else {
+    console.log('Server is listening on port ' + port)
+  }
 })
