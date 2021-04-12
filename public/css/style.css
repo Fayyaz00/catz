@@ -1,7 +1,8 @@
 
 .meow-button {
-margin-left: 50%;
-margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 padding: 1%;
 margin-bottom: 1%;
 margin-top: 1%;
@@ -19,7 +20,8 @@ top: 1px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 50%; /* or max-width: 100%; */
+  height: auto;
 }
 
 #test {
