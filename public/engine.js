@@ -1,5 +1,3 @@
-
-
 let randNum = 100;
 
 document.getElementById('meow').addEventListener('click', async () => {
