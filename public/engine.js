@@ -3,7 +3,8 @@ let randNum = 100;
 document.getElementById('meow').addEventListener('click', async () => {
 
   if (randNum <= 8) {
-    document.getElementById('frame').src = "";
+    document.getElementById('meow').remove();
+    document.getElementById('frame').remove();
     document.getElementById('vid').src = "https://i.imgur.com/MxAE8Wp.mp4"
     document.getElementById('vid').style.display = "block";
     document.getElementById('vid').style.marginLeft = "auto";
