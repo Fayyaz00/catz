@@ -7,6 +7,13 @@ margin-bottom: 1%;
 margin-top: 1%;
 }
 
+#vid {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; */
+}
+
 #frame {
   display: block;
   margin-left: auto;
